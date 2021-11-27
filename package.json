@@ -1,0 +1,30 @@
+{
+  "name": "@delgada/cli",
+  "version": "0.0.1",
+  "description": "Command line interface and standard tooling for Delgada development.",
+  "author": "Hawk Ticehurst",
+  "license": "MIT",
+  "homepage": "https://github.com/delgada-ui/cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delgada-ui/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/delgada-ui/cli/issues"
+  },
+  "main": "build/index.js",
+  "bin": {
+    "delgada": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "dependencies": {
+    "commander": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "prettier": "^2.5.0",
+    "typescript": "^4.5.2"
+  }
+}

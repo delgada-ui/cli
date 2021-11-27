@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "outDir": "build",
+    "declarationDir": "build",
+    "lib": ["es6"],
+    "pretty": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "declaration": true,
+    "sourceMap": false,
+    "noEmitOnError": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": false,
+    "allowJs": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
