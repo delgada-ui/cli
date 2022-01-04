@@ -13,7 +13,7 @@ cli
   .description('compile delgada source code')
   .option('-e, --entry <path>', 'set entrypoint directory', './src')
   .option('-b, --build <path>', 'set build directory', './build')
-  .option('-a, --assets <path>', 'set assets directory', './src/assets')
+  .option('-a, --assets <path>', 'set assets directory')
   .action((options) => {
     const entryDir: string = options.entry;
     const buildDir: string = options.build;
