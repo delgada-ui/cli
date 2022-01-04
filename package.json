@@ -20,6 +20,7 @@
     "build": "tsc -p ./tsconfig.json"
   },
   "dependencies": {
+    "@delgada/core": "^0.1.0",
     "commander": "^8.3.0"
   },
   "devDependencies": {
