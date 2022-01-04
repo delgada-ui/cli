@@ -1,19 +1,21 @@
 import { Command } from 'commander';
+import { compile } from '@delgada/core';
+
 const pkg = require('../package.json');
 
 const cli = new Command();
 
-cli
-  .version(`@delgada/cli: ${pkg.version}`)
-  .option('-c, --config <path>', 'set config path', './delgada.config.js');
+cli.version(`@delgada/cli: ${pkg.version}`);
 
 cli
   .command('build')
   .description('compile delgada source code')
-  .option('-e, --entry <path>', 'set entrypoint path', './src/index.html')
-  .option('-b, --build <path>', 'set build path', './build')
+  .option('-e, --entry <path>', 'set entrypoint directory', './src')
+  .option('-b, --build <path>', 'set build directory', './build')
   .action((options) => {
-    console.log('Compiling source code...');
+    const entryDir: string = options.entry;
+    const buildDir: string = options.build;
+    compile(entryDir, buildDir);
   });
 
 cli.parse(process.argv);
