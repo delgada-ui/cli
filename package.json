@@ -1,6 +1,6 @@
 {
   "name": "@delgada/cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Command line interface and standard tooling for Delgada development.",
   "author": "Hawk Ticehurst <hawkticehurst@gmail.com>",
   "license": "MIT",
